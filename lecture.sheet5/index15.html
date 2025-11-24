@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Methods with Buttons</title>
+</head>
+<body>
+
+<h2>Array Methods on Fruits</h2>
+
+<p><strong>Fruits Array:</strong> <span id="fruits-array"></span></p>
+
+<button onclick="sortFruits()">Sort Alphabetically</button>
+<button onclick="removeLast()">Remove Last Item</button>
+<button onclick="addKiwi()">Add "Kiwi"</button>
+
+<script>
+  // تعريف المصفوفة
+  let fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+
+  // عرض المصفوفة الحالية
+  function updateDisplay() {
+    document.getElementById("fruits-array").textContent = fruits.join(", ");
+  }
+
+  updateDisplay(); // عرض المصفوفة الأصلية عند بداية الصفحة
+
+  // ترتيب المصفوفة أبجدياً
+  function sortFruits() {
+    fruits.sort();
+    updateDisplay();
+  }
+
+  // إزالة آخر عنصر
+  function removeLast() {
+    fruits.pop();
+    updateDisplay();
+  }
+
+  // إضافة "Kiwi"
+  function addKiwi() {
+    fruits.push("Kiwi");
+    updateDisplay();
+  }
+</script>
+
+</body>
+</html>
