@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magazine Order Form</title>
+</head>
+<body>
+
+    <h2>Magazine Order Form</h2>
+
+    <form action="#" method="post">
+        <table>
+
+       
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="fname" size="30" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lname" size="30" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="address" name="address" size="40" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city" size="30" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="zip">ZIP Code:</label></td>
+                <td><input type="text" id="zip" name="zip" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="magazine">Magazine:</label></td>
+                <td>
+                    <select id="magazine" name="magazine" required>
+                        <option value="">-- Select a magazine --</option>
+                        <option value="TechWorld">Tech World</option>
+                        <option value="HealthToday">Health Today</option>
+                        <option value="TravelLife">Travel Life</option>
+                        <option value="FashionPlus">Fashion Plus</option>
+                        <option value="SportsWeekly">Sports Weekly</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Subscription Length:</td>
+                <td>
+                    <input type="radio" id="oneYear" name="subscription" value="1 year" required>
+                    <label for="oneYear">1 Year</label>
+                    <br>
+                    <input type="radio" id="twoYears" name="subscription" value="2 years">
+                    <label for="twoYears">2 Years</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="comments">Additional Comments:</label></td>
+                <td>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write any notes or comments here..."></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit">Submit Order</button></td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
